@@ -5,6 +5,7 @@ to the server and from server back to the client.
 To run with node:
 * npm init
 * node index.js
+* open browser for http://localhost:8080/
 
 Result:
 in broswer:
@@ -16,6 +17,7 @@ To run with pkg:
 * make sure to delete the browser cache before running the exe!
 * pkg .
 * express-example.exe
+* open browser for http://localhost:8080/
 
 Result:
 * in browser: 
