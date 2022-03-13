@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/sakura.css" type="text/css" />
+  </head>
+  <body>
+    <p id="txt">Hello, world!</p>
+
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script>
+      var socket = io();
+
+      var txt = document.getElementById('txt');
+
+      socket.emit('user entered', {
+        user: 'Bob',
+        message: "message"
+      });
+
+      socket.on('server response', function (data) {
+        console.log(data);
+        txt.textContent = 'response from server: ' + data.message;
+      });
+
+      console.log('script block end');
+
+    </script>
+  </body>
+</html>
