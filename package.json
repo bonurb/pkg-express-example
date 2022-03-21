@@ -9,7 +9,8 @@
   },
   "pkg": {
     "assets": [
-      "views/**/*"
+      "views/**/*",
+	  "./node_modules/socket.io/client-dist/**/*"
     ],
     "targets": [
       "node16"
